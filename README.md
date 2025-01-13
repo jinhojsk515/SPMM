@@ -41,7 +41,7 @@ Arguments can be passed with commands, or be edited manually in the running code
        ```
        python d_pv2smiles_batched.py --checkpoint './Pretrain/checkpoint_SPMM.ckpt' --input_file './data/pubchem_1k_unseen.txt' --k 2
        ```
-   * single: The model takes one query PV and generates `n_generate` molecules with that PV using k-beam search. The generated molecules will be written in `generated_molecules.txt`. Here, you need to build your input PV in the code. Check the four examples that we included.
+   * single: The model takes one query PV and generates `n_generate` molecules with that PV using k-beam search. The generated molecules will be written in `generated_molecules.txt`. Here, you need to build your input PV in the file `p2s_input.csv`. Check the four examples that we included.
        ```
        python d_pv2smiles_single.py --checkpoint './Pretrain/checkpoint_SPMM.ckpt' --n_generate 1000 --stochastic True --k 2
        ```
